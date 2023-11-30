@@ -1,0 +1,732 @@
+//Q.1 1-->10 even number in while loop
+#include <stdio.h>
+
+int main()
+{
+    int a=1;
+    while(a<=10)
+    {
+       if(a%2==0)
+       {
+            printf("%d ",a);
+       }
+        a++;
+    }
+
+    return 0;
+}
+.......................................
+//Q.2 1-->100 even number in while loop
+#include <stdio.h>
+
+int main()
+{
+    int a=1;
+    while(a<=100)
+    {
+       if(a%2==0)
+       {
+            printf("%d ",a);
+       }
+        a++;
+    }
+
+    return 0;
+}
+...........................................
+//Q.3 100-->1 even number reverse 
+
+#include <stdio.h>
+
+int main()
+{
+    int a=100;
+    while(a>=1)
+    {
+       if(a%2==0)
+       {
+            printf("%d",a);
+       }
+        a--;
+    }
+
+    return 0;
+}
+.................................................
+//Q.4 10--->1 even number reverse
+
+#include <stdio.h>
+
+int main()
+{
+    int a=10;
+    while(a>=1)
+    {
+       if(a%2==0)
+       {
+            printf("%d",a);
+       }
+        a--;
+    }
+
+    return 0;
+}
+.................................................
+//Q.5 user input a =starting point b =ending point supoose :a=45 b=89 45------>89 (even number ) 
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a;
+     int b;
+     printf("plese enter the starting point value : \n");
+     scanf("%d",&a);
+     printf("please enter the end point value : \n");
+     scanf("%d",&b);
+    while(a<=b)
+    {
+     if(a%2==0) 
+    printf("%d",a);
+    a++;
+    }
+    return 0;
+}
+.............................................................
+//Q.6 user input a =starting point b =ending point supoose :a=89 b=45 89------>45 reverse (even number ) 
+
+
+#include <stdio.h>
+
+int main()
+{
+     int a;
+     int b;
+     printf("plese enter the starting point value : \n");
+     scanf("%d",&a);
+     printf("please enter the end point value : \n");
+     scanf("%d",&b);
+    while(a>=b)
+    {
+     if(a%2==0) 
+    printf("%d",a);
+    a--;
+    }
+    return 0;
+}
+............................................................
+//Q.7 1-->10 odd number in while loop
+#include <stdio.h>
+
+int main()
+{ int a=1;
+    while(a<=10)
+    {
+       if(a%2!=0)
+       {
+            printf("%d ",a);
+       }
+        a++;
+    }
+
+    return 0;
+}
+..............................................................
+//Q.8 1-->100 odd number in while loop
+#include <stdio.h>
+
+int main()
+{ int a=1;
+    while(a<=100)
+    {
+       if(a%2!=0)
+       {
+            printf("%d ",a);
+       }
+        a++;
+    }
+
+    return 0;
+}
+.....................................................
+//Q.9 100-->1 odd number reverse in while loop
+#include <stdio.h>
+
+int main()
+{ int a=100;
+    while(a>=1)
+    {
+       if(a%2!=0)
+       {
+            printf("%d ",a);
+       }
+        a--;
+    }
+
+    return 0;
+}
+..................................................
+//Q.10 10-->1 odd number reverse in while loop
+#include <stdio.h>
+
+int main()
+{ int a=10;
+    while(a>=1)
+    {
+       if(a%2!=0)
+       {
+            printf("%d ",a);
+       }
+        a--;
+    }
+
+    return 0;
+}
+.................................................
+//Q.11 user input a =starting point b =ending point supoose :a=45 b=89 45------>89 (odd number ) 
+
+#include <stdio.h>
+
+int main()
+{
+     int a;
+     int b;
+     printf("plese enter the starting point value : \n");
+     scanf("%d",&a);
+     printf("please enter the end point value : \n");
+     scanf("%d",&b);
+    while(a<=b)
+    {
+     if(a%2!=0) 
+    printf("%d",a);
+    a++;
+    }
+
+    return 0;
+}
+........................................................................
+//Q.12 user input a =starting point b =ending point supoose :a=89 b=45 89------>45 (odd number) 
+
+#include <stdio.h>
+
+int main()
+{
+     int a;
+     int b;
+     printf("plese enter the starting point value : \n");
+     scanf("%d",&a);
+     printf("please enter the end point value : \n");
+     scanf("%d",&b);
+    while(a>=b)
+    {
+     if(a%2!=0) 
+    printf("%d",a);
+    a--;
+    }
+
+    return 0;
+}
+..........................................................
+//Q.13 2 ki table 
+
+#include <stdio.h>
+
+int main() {
+    int i = 1;
+
+    
+    while (i <= 10) {
+        printf("%d \n",2 * i);
+        i++;
+    }
+
+    return 0;
+}
+
+.........................................................
+
+//Q.14 user input : table print 10 45
+
+#include <stdio.h>
+
+int main() {
+    int i = 1;
+    int a;
+    printf("enter the number who's table u want....");
+    scanf("%d",&a);
+    
+    while (i <= 10) {
+        printf( "%d \n",a*i);
+        i++;
+    }
+
+    return 0;
+}
+
+............................................................
+
+//Q.15 2X1=2 2X2=2
+
+#include <stdio.h>
+
+int main() {
+    int i = 1;
+  
+    while (i <= 10) {
+        printf("2 * %d = %d \n", i, 2 * i);
+        i++;
+    }
+
+    return 0;
+}
+..........................................................
+
+//Q.16 number swap
+
+#include <stdio.h>
+
+int main()
+{
+    int a=10;
+    int b=20;
+    int c;
+      printf("the value of a = %d \n",a);
+      printf("the value of b = %d \n",b);
+    
+    
+    c=a;
+    a=b;
+    b=c;
+    
+    printf("the swape value of a = %d \n",a);
+      printf("the swape value of b = %d \n",b);
+    
+
+    return 0;
+}
+
+..................................................
+
+//Q.17 reverse number :342 243 
+
+#include <stdio.h>
+
+int
+main ()
+{
+  int num;
+  printf ("Enter the number \n");
+  scanf ("%d", &num);
+  int rem;
+  int temp=num;
+  int sum = 0;
+
+  while (num > 0)
+    {
+
+      rem = num % 10;
+      sum = sum * 10 + rem;
+      num = num / 10;
+
+    
+    }
+     
+    printf("the reversed number is %d",sum");
+
+  return 0;
+}
+
+................................................
+
+//Q.18 pallindrome 
+
+#include <stdio.h>
+
+int
+main ()
+{
+  int num;
+  printf ("Enter the number \n");
+  scanf ("%d", &num);
+  int rem;
+  int temp=num;
+  int sum = 0;
+
+  while (num > 0)
+    {
+
+      rem = num % 10;
+      sum = sum * 10 + rem;
+      num = num / 10;
+
+    
+    }
+     
+     if(sum==temp){
+            printf("this is pallandrom....");
+           
+    }else {
+           printf("this is not a pallandrom...");
+    }
+
+  return 0;
+}
+
+....................................................
+
+//Q.19 arsmtrong number 
+
+#include <stdio.h>
+
+int
+main ()
+{
+  int num;
+  printf ("Enter the number \n");
+  scanf ("%d", &num);
+  int rem;
+  int temp=num;
+  int sum = 0;
+
+  while (num > 0)
+    {
+
+      rem = num % 10;
+      sum = sum + rem*rem*rem;
+      num = num / 10;
+
+    
+    }
+     
+     if(sum==temp){
+            printf("this is arsmtrong number....");
+           
+    }else {
+           printf("this is not a arsmtrong number...");
+    }
+
+  return 0;
+}
+
+............................................
+//Q.20 1--->10 number print for loop 
+
+#include <stdio.h>
+
+int
+main ()
+{
+  for(int i=1;i<=10;i++){
+         printf(" %d \n",i);
+  }
+  
+
+  return 0;
+}
+
+..........................................
+
+//Q.21 1-->100 for loop 
+
+#include <stdio.h>
+
+int
+main ()
+{
+  for(int i=1;i<=100;i++){
+         printf(" %d \n",i);
+  }
+  
+
+  return 0;
+}
+
+.............................................
+
+//Q.22 50---->1000 for loop 
+
+
+#include <stdio.h>
+
+int
+main ()
+{
+  for(int i=50;i<=1000;i++){
+         printf(" %d \n",i);
+  }
+  
+
+  return 0;
+}
+
+
+.................................................
+
+//Q.23 10--->1 for loop reverse 
+
+#include <stdio.h>
+
+int
+main ()
+{
+  for(int i=10;i>=1;i--){
+         printf(" %d \n",i);
+  }
+  
+
+  return 0;
+}
+
+......................................................
+
+//Q.24 user input starting point : 45 ending point :78
+#include <stdio.h>
+
+int
+main ()
+{
+       int a;
+       printf("enter the starting point...");
+       scanf(" %d",&a);
+       
+       int b;
+       printf("enter the ending point...");
+       scanf(" %d",&b);
+       
+  for(;a<=b;a++){
+         printf(" %d \n",a);
+  }
+  
+
+  return 0;
+}
+
+...................................................
+
+//Q.25 1--->10 even number for loop 
+
+#include <stdio.h>
+
+int
+main ()
+{
+       int sum=0;
+       
+  for(int i =1;i<=10;i++){
+         if(i%2==0){
+                printf("%d \n",i);
+         }
+  }
+  
+
+  return 0;
+}
+..................................................
+
+//Q.26 1--->100 even number for loop 
+
+#include <stdio.h>
+
+int
+main ()
+{
+       int sum=0;
+       
+  for(int i =1;i<=100;i++){
+         if(i%2==0){
+                printf("%d \n",i);
+         }
+  }
+  
+
+  return 0;
+}
+
+................................................
+
+//Q.27 100-->1 odd number
+
+#include <stdio.h>
+
+int
+main ()
+{
+       int sum=0;
+       
+  for(int i=100;i>=1;i--){
+         if(i%2==0){
+                printf("%d \n",i);
+         }
+  }
+  
+
+  return 0;
+}
+
+..................................................
+
+//Q.28 table print :2 table for loop 
+#include <stdio.h>
+
+int
+main ()
+{
+       int sum=0;
+       
+  for(int i =1;i<=10;i++){
+         
+                printf("%d \n",2*i);
+         
+  }
+  
+
+  return 0;
+}
+
+.........................................................
+
+//Q.29 1----->10 sum 
+
+#include <stdio.h>
+
+int
+main ()
+{
+       int sum=0;
+       
+  for(int i =1;i<=10;i++){
+         sum=sum+i;
+          printf(" %d \n",i);
+  }
+  printf("the sum is %d",sum);
+
+  return 0;
+}
+
+.................................................................
+
+//Q.30 1--->10 even number :sum 
+
+
+#include <stdio.h>
+
+int
+main ()
+{
+       int sum=0;
+       
+  for(int i =1;i<=10;i++){
+         if(i%2==0){
+                printf(" %d \n",i);
+                sum=sum+i;
+         }
+         
+          
+  }
+  printf("the sum is %d",sum);
+
+  return 0;
+}
+
+..................................................
+//Q.31 1---->10 :odd number :sum
+
+#include <stdio.h>
+
+int
+main ()
+{
+       int sum=0;
+       
+  for(int i =1;i<=100i++){
+         if(i%2==0){
+                printf(" %d \n",i);
+                sum=sum+i;
+         }
+         
+          
+  }
+  printf("the sum is %d",sum);
+
+  return 0;
+}
+.......................................................
+
+//Q.32 user input starting point :56ending point : 8956--->89 :even number :sum 
+
+
+#include <stdio.h>
+
+int
+main ()
+{
+       int sum=0;
+       int e,s;
+       printf("enter the starting point..");
+       scanf("%d",&s);
+      printf("enter the ending point...");
+       scanf("%d",&e);
+
+  for(int i=s;i<=e;i++){
+         if(i%2==0){
+                printf(" %d \n",i);
+                sum=sum+i;
+         }
+         
+          
+  }
+  printf("the sum is %d",sum);
+
+  return 0;
+}
+
+.........................................................
+
+//Q.33 user input starting point :56ending point : 8956--->89 :odd number :sum 
+#include <stdio.h>
+
+int
+main ()
+{
+       int sum=0;
+       int e,s;
+       printf("enter the starting point..");
+       scanf("%d",&s);
+      printf("enter the ending point...");
+       scanf("%d",&e);
+
+  for(int i=s;i<=e;i++){
+         if(i%2==1{
+                printf(" %d \n",i);
+                sum=sum+i;
+         }
+         
+          
+  }
+  printf("the sum is %d",sum);
+
+  return 0;
+}
+
+-------------------------------------------------
+
+//Q.34 factorial code 
+
+#include <stdio.h>
+
+int
+main ()
+{
+       int fact=1;
+       
+  for(int i =1;i<=3;i++){
+         
+         fact*=i;
+          
+  }
+  printf("the factorial is %d",fact);
+
+  return 0;
+}
+................................................
