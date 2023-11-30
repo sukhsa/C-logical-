@@ -1,0 +1,450 @@
+//Q.1 
+s =>number swap with third varaible 
+
+a =>two number input a and b 
+		addition 
+
+m =>multiplication 
+#include <stdio.h>
+
+int main ()
+{
+       char process;
+       printf("what do u want to do swap the no. = s , addtion of two no. = a , multipy = m \n");
+       scanf("%c",&process);
+       
+  if (process == 's')
+    {
+      int a = 10;
+      int b = 20;
+      int temp;
+
+      printf ("the value of a: %d\n", a);
+      printf ("the value of b: %d\n", b);
+
+      temp = a;
+      a = b;
+      b = temp;
+
+      printf ("the swaped value of a: %d\n", a);
+      printf ("the swaped value of b: %d\n", b);
+    }
+  else if (process == 'a')
+    {
+      int a = 10;
+      int b = 20;
+      int add;
+      add = a+b;
+
+      printf ("the addition of a and b add : %d\n", add);
+    }
+  else if (process == 'm')
+    {
+        int a = 10;
+      int b = 20;
+      int mul;
+      mul = a*b;
+
+      printf ("the multyplication of a and b is : %d\n", mul);
+    }
+
+  return 0;
+}
+
+----------------------------------------------------------------------------
+
+//Q.2
+e =>USER INPUT =>one number check 
+			number =>even =>this number is even 
+			number =>not even=>this number is not even 
+
+o =>one number input 
+		number odd =>odd number 
+		number odd not=>thid number is not odd number 
+
+
+#include <stdio.h>
+
+int main()
+{
+       char process;
+       printf("which process do u want to do odd or even...");
+       scanf("%c",&process);
+       
+    if(process=='e'){
+           int num1;
+           printf("enter the number  : ");
+           scanf("%d",&num1);
+           if(num1%2==0){
+                  printf("The number is even...");
+           }else{
+                  printf("the no. is not even...");
+           }
+           
+    }else if(process=='o'){
+           int num2;
+           printf("enter the number  : ");
+           scanf("%d",&num2);
+           if(num2%2==1){
+                  printf("The number is odd...");
+           }else{
+                  printf("the no. is not odd...");
+           }
+           
+    }
+    return 0;
+}
+
+-----------------------------------------------------------------------------------------------------
+
+//Q.3
+a b c d =>you are lucky 
+e f g h =>you are unlucky 
+not valid 
+
+
+#include <stdio.h>
+
+int main ()
+ {
+  char process;
+  printf ("enter any letter....a-z\n");
+  scanf ("%c", &process);
+
+  if (process == 'a' || 'b' || 'c' || 'd')
+    {
+
+      printf ("lucky...");
+    }
+
+  else if (process == 'e' || 'f' || 'g' || 'h')
+    {
+      printf ("unlucky...");
+    }
+    else {
+           printf("not valid...");
+    }
+
+
+  return 0;
+}
+
+--------------------------------------------------------------------------------------------------------
+//Q.4
+user area /volume 
+area =>a 
+volumne =>v 
+
+enter =>a 
+area of traingle / cylinder/ circle 
+trainge =>t 
+cylinder =>d 
+circle =>c 
+
+t =>calculate area of traingle 
+
+enter =>v 
+volume of traingle / cylinder/ circle 
+trainge =>t 
+cylinder =>d 
+circle =>c 
+
+t =>calculate area of traingle 
+
+#include <stdio.h>
+
+int main()
+{
+    char process;
+    printf("What do u want area or volume?? \n");
+    scanf(" %c", &process); // Add a space before %c to skip whitespace characters
+
+    if (process == 'a') {
+        char shape;
+        printf("konse shape ka area chiye tumko?? \n");
+        printf("area of triangle / cylinder / circle, triangle =>t, cylinder =>d, circle =>c \n");
+        scanf(" %c", &shape); // Add a space before %c to skip whitespace characters
+
+        if (shape == 't') {
+            double base, height, area;
+            printf("Enter the base and height of the triangle:\n ");
+            scanf("%lf %lf", &base, &height);
+
+            area = 0.5 * base * height;
+            printf("The area of the triangle is: %.2lf square units with base %.2lf and height %.2lf\n", area, base, height);
+        }else if (shape == 'd'){
+               int r,h;
+               printf("enter the radius...");
+               scanf("%d",&r);
+               printf("enter the height of cylinder...");
+               scanf("%d",&h);
+               float aocylin;
+               aocylin = 2*3.14*r*r + 2*3.14*r*h;
+               printf("The area of cylinder is : %f",aocylin);
+        }else if(shape == 'c'){
+               double radius, ac;
+            printf("Enter the radius of the circle:\n ");
+            scanf("%lf", &radius);
+
+            ac = 3.14 * radius * radius;
+            printf("The area of the circle is: %.2lf square units with radius %.2lf\n", ac, radius);
+        }
+
+    } else if (process == 'v') {
+           char shape;
+        printf("konse shape ka volume chiye tumko?? \n");
+        printf("volume of triangle / cylinder / circle, triangle =>t, cylinder =>d, circle =>c \n");
+        scanf(" %c", &shape);
+        
+        if(shape == 'd'){
+                double radius, height, volume;
+            printf("Enter the radius and height of the cylinder:\n ");
+            scanf("%lf %lf", &radius, &height);
+
+            volume = 3.14 * radius * radius * height;
+            printf("The volume of the cylinder is: %.2lf cubic units with radius %.2lf and height %.2lf\n", volume, radius, height);
+        }else if("c"){
+               double side, volume;
+            printf("Enter the side length of the cube:\n ");
+            scanf("%lf", &side);
+
+            volume = side * side * side;
+            printf("The volume of the cube is: %.2lf cubic units with side length %.2lf\n", volume, side);
+        }
+        
+    } else {
+        printf("not valid...");
+    }
+
+    return 0;
+}
+
+-------------------------------------------------------------------------------------------------------------------------------
+//Q.5 C program to convert temperature from Fahrenheit to Celsius and Celsius to Fahrenheit
+cesius 
+f 
+c---f 
+c 
+f---->c 
+
+
+#include <stdio.h>
+
+int main()
+{
+       char process;
+       printf("what do u want c--f = f or f--c = c \n");
+       scanf("%c",&process);
+       
+    if(process=='f'){
+           float C, F;
+    printf("enter the temp in Celsius\n ");
+    scanf("%f", &C);
+        F = (C * 9/5) + 32;
+     printf("The degrees Celsius %.2f has the degree Fahrenheit is %.2f\n",C, F);
+    }else if(process=='c'){
+           //f---c
+           float c, f;
+           printf("enter the temp in Fahrenheit\n");
+           scanf("%f",&f);
+          c = (f-32)*5/9;
+          printf("The the degree Fahrenheit is %.2f has degrees Celsius %.2f\n",f,c);
+           
+    }
+
+    return 0;
+}
+
+---------------------------------------------------------------------------------------------------------
+//Q.6
+C program to enter student marks and find percentage and grade
+A college has the following rules for the grading system:
+5 marks (grade + %)
+1. Below 25 – F
+2. 25 to 45 – E
+3. 45 to 50 – D
+4. 50 to 60 – C
+5. 60 to 80 – B 
+6. Above 80 – A
+
+
+
+
+#include <stdio.h>
+
+int main()
+{
+       int m,p,c,s,h;
+       printf("enter the marks...\n");
+       printf("Maths = ");
+       scanf("%d",&m);
+       
+       printf("physics = ");
+       scanf("%d",&p);
+       
+       printf("chemistry = ");
+       scanf("%d",&c);
+       
+       printf("sanskrit = ");
+       scanf("%d",&s);
+       
+       printf("hindi = ");
+       scanf("%d",&h);
+       
+       float per;
+       per =((m+p+c+s+h)*100)/500;
+       
+       printf("%f",per);
+       if(per<=25){
+              printf("your grade is F");
+       
+       }else if (per>25 && per<45){
+              printf("your grade is E");
+       }else if (per>45 && per<50){
+              printf("your grade is D");
+       }else if (per>50 && per<60){
+              printf("your grade is C");
+       }else if (per>60 && per<80){
+              printf("your grade is B");
+       }else if (per>80){
+              printf("your grade is A");
+       }else {
+              printf("u are FAIL.......");
+       }
+       
+       
+    return 0;
+}
+
+---------------------------------------------------------------------------------------------------------------------------
+//Q.7
+5 number input 
+>40 
+average 
+3. 45 to 50 – D
+4. 50 to 60 – C
+5. 60 to 80 – B
+6. Above 80 – A 
+otherwise fail 
+
+#include <stdio.h>
+
+int main()
+{
+       
+    int m, p, c, s, h;
+
+  printf ("number 1 = ");
+  scanf ("%d", &m);
+if(m>40){
+  printf ("number 2 = ");
+  scanf ("%d", &p);
+if(p>40){
+  printf ("number 3 = ");
+  scanf ("%d", &c);
+if(c>40){
+  printf ("number 4 = ");
+  scanf ("%d", &s);
+ if(s>40){ 
+  printf ("number 5 = ");
+  scanf ("%d", &h);
+  if(h>40){
+         int Avg;
+       Avg  = (m+p+c+s+h)/5;
+       if(Avg>45 && Avg<50){
+              printf("Your grade is D\n");
+       }else if (Avg>=50 && Avg<60){
+              printf("your grade is C\n");
+       }else if(Avg>=60 && Avg<80){
+              printf("your grade is B");
+       }else if(Avg>=80){
+              printf("your grade is A");
+       }else {
+              printf("u are FAIL.....");
+       }
+  }else{
+       printf("u are fail......");
+}
+}else{
+       printf("u are fail......");
+}
+}else{
+       printf("u are FAIL.....");
+}
+}else{
+       printf("u are FAIL.....");
+}
+}else{
+       printf("u are FAIL.....");
+}
+    return 0;
+}
+
+---------------------------------------------------------------------------------------------------------------------------
+//Q.8
+salalry :
+holidays (1) =full salary 
+2-5 =5% 
+5-14 =10% 
+15 =50% 
+else =not salary 
+
+output : 
+name:
+address: 
+bank details: 
+salary : 
+alot :
+ holidays 
+
+
+#include <stdio.h>
+
+int main()
+{
+       int sall;
+    printf("What is ur sallary? ");
+    scanf("%d",&sall);
+     int holi;
+     printf("How many holiday's u taken in this month? \n");
+     scanf("%d",&holi);
+     if(holi == 1){
+            printf("sukhvveer singh\n");
+            printf("21 south, jhotwara, jaipur\n");
+            printf("SBI(jhotwara branch)\n");
+            printf("ur salary is %d \n",sall);
+            printf("the salary aloted to sukhveer is %d \n",sall);
+            printf("your total holiday's = %d \n",holi);
+            
+     }else if (holi == 2 || holi == 3 || holi == 4 || holi == 5){
+            printf("sukhveer singh \n");
+            printf("21 south, jhotwara, jaipur\n");
+            printf("SBI(jhotwara branch)\n");
+            printf("ur salary is %d \n",sall);
+            float A_sall;
+            A_sall = ((5.0)/(100.0))*sall;
+            printf("the salary aloted to sukhveer is %f \n",A_sall);
+            printf("your total holiday's = %d \n",holi);
+     }else if (holi>5 && holi<14){
+            printf("sukhveer singh\n");
+            printf("21 south, jhotwara, jaipur\n");
+            printf("SBI(jhotwara branch)\n");
+            printf("ur salary is %d \n",sall);
+            float A_sall;
+            A_sall = ((10.0)/(100.0))*sall;
+            printf("the salary aloted to sukhveer is %.1f \n",A_sall);
+            printf("your total holiday's = %d \n",holi);
+     }else if (holi>=15){
+            printf("sukhveer singh\n");
+            printf("21 south, jhotwara, jaipur\n");
+            printf("SBI(jhotwara branch)\n");
+            printf("ur salary is %d \n",sall);
+            float A_sall;
+            A_sall = ((50.0)/(100.0))*sall;
+            printf("the salary aloted to sukhveer is %.1f \n",A_sall);
+            printf("your total holiday's = %d \n",holi);
+     }
+    return 0;
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------
