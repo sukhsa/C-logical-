@@ -1,0 +1,323 @@
+******************************************
+//Q.1 
+#include <stdio.h>
+
+int main()
+{
+    int a;
+   printf("enter the value of a");
+   scanf("%d", &a);
+   float b;
+   printf("enter the value of b");
+   scanf("%f", &b);
+   int c;
+   printf("enter the value of c");
+   scanf("%d", &c);
+   
+   
+
+    return 0;
+}
+
+
+..........................................
+//Q.2
+#include <stdio.h>
+
+int main()
+{
+   char a;
+   printf("enter the word a");
+   scanf(" %c", &a);
+   char b;
+   printf("enter the word b");
+   scanf(" %c", &b);
+   int c;
+   printf("enter the word c");
+   scanf(" %c", &c);
+   char d;
+   printf("enter the word d");
+   scanf(" %C", &d);
+  
+
+    return 0;
+}
+
+...........................................
+//Q.3
+#include <stdio.h>
+
+int main()
+{
+    int a;
+   printf("enter the value of a");
+   scanf("%d", &a);
+   char b;
+   printf("enter the value of  b");
+   scanf("%d", &b);
+   int result;
+   result=a+b;
+   printf("the addition of a and b is : %d", result);
+   return 0;
+
+}
+....................................................
+//Q.4
+#include <stdio.h>
+
+int main()
+{
+   int a;
+   printf("enter the value of a");
+   scanf("%d", &a);
+   int b;
+   printf("enter the value of  b");
+   scanf("%d", &b);
+   int result;
+   result=a-b;
+   printf("the substraction of a and b is : %d", result);
+  
+
+    return 0;
+}
+......................................................
+//Q.5
+#include <stdio.h>
+
+int main()
+{
+   int a;
+   printf("enter the value of a");
+   scanf("%d", &a);
+   int b;
+   printf("enter the value of  b");
+   scanf("%d", &b);
+   int result;
+   result=a/b;
+   printf("the substraction of a and b is : %d", result);
+  
+
+    return 0;
+}
+.....................................................
+//Q.6
+#include <stdio.h>
+
+int main()
+{
+   int a;
+   printf("enter the value of a");
+   scanf("%d", &a);
+   int b;
+   printf("enter the value of  b");
+   scanf("%d", &b);
+   int result;
+   result=a*b;
+   printf("the multiplication of a and b is : %d", result);
+  
+
+    return 0;
+}
+......................................................
+
+//Q.7
+#include <stdio.h>
+
+int main()
+{
+   int a;
+   printf("enter the value of a");
+   scanf("%d", &a);
+   int b;
+   printf("enter the value of  b");
+   scanf("%d", &b);
+   int c;
+   printf("enter the value of  c");
+   scanf("%d", &c);
+   int d;
+   printf("enter the value of  d");
+   scanf("%d", &d);
+   int result;
+   result=a+b+c+d;
+   printf("the addition of a and b and c and d is : %d", result);
+  
+
+    return 0;
+}
+....................................................................
+//Q.8
+#include <stdio.h>
+
+int main()
+{
+   int a;
+   printf("enter the value of a");
+   scanf("%d", &a);
+   int b;
+   printf("enter the value of  b");
+   scanf("%d", &b);
+   int c;
+   printf("enter the value of  c");
+   scanf("%d", &c);
+   int d;
+   printf("enter the value of  d");
+   scanf("%d", &d);
+   int result;
+   result=a-b*c+d;
+   printf("the substraction multiply addition of a and b and c and d is : %d", result);
+  
+
+    return 0;
+}
+.................................................................
+//Q.9
+#include <stdio.h>
+
+int main()
+{
+   float a;
+   printf("enter the value of a");
+   scanf("%f", &a);
+   float b;
+   printf("enter the value of  b");
+   scanf("%f", &b);
+   int c;
+   printf("enter the value of  c");
+   scanf("%d", &c);
+   int d;
+   printf("enter the value of  d");
+   scanf("%d", &d);
+   
+   float result;
+   result=a+b*c-d;
+   printf("the addition multiply substraction  a and b and c and d is : %f %d", result);
+  
+
+    return 0;
+}
+....................................................................
+
+
+//Q.10
+#include <stdio.h>
+
+int main()
+{
+   int a;
+   printf("enter the value of a");
+   scanf("%d", &a);
+   int b;
+   printf("enter the value of  b");
+   scanf("%d", &b);
+   int c;
+   printf("enter the value of  c");
+   scanf("%d", &c);
+   int d;
+   printf("enter the value of  d");
+   scanf("%d", &d);
+   int e;
+   printf("enter the value of e");
+   scanf("%d", &e);
+   
+   int result;
+   result=a+b*c-d/e;
+   printf("the addition multiply substraction divide of a and b and c and d is : %df", result);
+  
+
+    return 0;
+}
+........................................................................
+
+//Q.11 area of  square
+#include <stdio.h>
+
+int main()
+{
+   int a;
+   printf("enter the side of a");
+   scanf("%d", &a);
+   int b;
+   printf("enter the side b");
+   scanf("%d", &b);
+   int result;
+   result=  a * a;
+   printf("side * side is : %d", result);
+  
+
+    return 0;
+}
+***********************************************************
+//Q.12 area of triangle
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("enter the base of a");
+    scanf("%d", &a);
+    int b;
+    printf("enter the height");
+    scanf("%d", &b);
+    int result;
+    result=0.5*a*b;
+    printf("the area of triangle is : %d", result);
+
+  
+
+    return 0;
+}
+........................................................
+//Q.13 area of  ractangle
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("enter the length");
+    scanf("%d", &a);
+    int b;
+    printf("enter the width");
+    scanf("%d", &b);
+    int result;
+    result=a*b;
+    printf("the area of ractangle is : %d", result);
+
+  
+
+    return 0;
+}
+...........................................................
+//Q.14 volume of sphere
+
+#include <stdio.h>
+int main()
+{ 
+   float pi;
+   printf("enter the pi");
+   scanf("%f", &pi);
+   int r;
+   printf("enter r");
+   scanf("%d", &r);
+   float volume;
+   volume=1.33*pi*r*r*r;
+   printf("the volume of sphere is : %f", volume);
+  
+
+    return 0;
+}
+..........................................................
+Q.15 volume of cube
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("enter the edge");
+    scanf("%d", &a);
+    int volume;
+    volume=a*a*a;
+    printf("the volume of cube is : %d", volume);
+
+    return 0;
+}
+.................................................................
