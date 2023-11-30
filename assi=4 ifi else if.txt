@@ -1,0 +1,306 @@
+//Q.1 m =>male   m nhi h toh not valid
+
+int main()
+{
+    char male;
+    printf("enter the character");
+    scanf("%c", &male);
+    if(male=='a')
+    {
+        printf("you are valid");
+    }
+    
+    else {
+        printf("you are not valid");
+    }
+    return 0;
+}
+...............................
+//Q.2 e r t y u i o p q w => upper line of keyboard   lower line of keyboard 
+
+
+#include <stdio.h>
+
+int main()
+{
+    char alpha;
+    printf("enter the word");
+    scanf("%c", &alpha);
+    if(alpha=='e'|| alpha=='r' || alpha=='t' || alpha=='y' || alpha=='u' || alpha=='i' || alpha=='o' || alpha=='p' || alpha=='q' || alpha=='w') 
+    {
+        printf("upper line of keyboard");
+    }
+    
+    else {
+        printf("lower line of keyboard");
+    }
+
+    return 0;
+}
+..........................................
+\\Q.3 vowel and constant
+#include <stdio.h>
+
+int main()
+{
+    char alpha;
+    printf("enter the word");
+    scanf("%c", &alpha);
+    if(alpha=='a' || alpha=='e' || alpha=='i' || alpha=='o' || alpha=='w')
+    {
+        printf("vowel");
+    }
+    
+    else {
+        printf("constant");
+    }
+
+
+    return 0;
+}
+..........................
+//Q.4 a.number swap without third variable
+#include <stdio.h>
+
+int main()
+{
+    int a=24;
+    int b=34;
+    printf("enter the value of a is %d \n",a);
+    printf("enter the value of b is %d\ n",b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("the swap value of a is %d \n",a);
+    printf("the swap value of b is %d \n",b); 
+
+    return 0;
+}
+//Q.4 b.number swap with third variable
+#include <stdio.h>
+
+int main()
+{
+    int a=24;
+    int b=34;
+    int c;
+    printf("enter the value of a is %d \n",a);
+    printf("enter the value of b is %d\ n",b);
+    c=a;//c=10 a=0;
+    a=b;//a=34 b=0;
+    b=c;//b=24 c=0;
+    printf("the swap value of a is %d \n",a);
+    printf("the swap value of b is %d \n",b); 
+
+    return 0;
+}
+
+....................................
+//Q.5 number is even or odd
+#include <stdio.h>
+
+int main()
+{
+     int num;
+     printf("enter the value of num");
+     scanf("%d",&num);
+     if(num%2==0)
+     {
+         printf("no is even");
+     }
+     else {
+         printf("no is odd");
+     }
+    return 0;
+}
+...........................................
+//Q.6 a s d f g h j k l =>mid line of keyboard     not valid
+
+#include <stdio.h>
+
+int main()
+{
+     char alpha;
+    printf("enter the word");
+    scanf("%c", &alpha);
+    if(alpha=='a'|| alpha=='s' || alpha=='d' || alpha=='f' || alpha=='g' || alpha=='h' || alpha=='j' || alpha=='k' || alpha=='l') 
+    {
+        printf("mid line keyboard");
+    }
+    
+    else {
+        printf("not valid");
+    }
+    return 0;
+}
+......................................
+//Q.7 z x c v b n m =>lower line of keyboard not valid
+
+#include <stdio.h>
+
+int main()
+{
+    char alpha;
+    printf("enter the word");
+    scanf("%c", &alpha);
+    if(alpha=='z'|| alpha=='x' || alpha=='c' || alpha=='v' || alpha=='b' || alpha=='n' || alpha=='m') 
+    {
+        printf("lower line keyboard");
+    }
+    
+    else {
+        printf("not valid");
+    }
+
+    return 0;
+}
+............................................
+//Q.8 weeks
+#include <stdio.h>
+
+int main()
+{
+      int r;
+    printf("enter tha day:");
+    scanf("%d",&r);
+    if(r==1)
+    {
+        printf("sunday");
+    }
+    else if(r==2)
+    {
+        printf("monday");
+    }
+    else if(r==3)
+    {
+       printf("tuesday"); 
+    }
+    else if(r==4)
+    {
+        printf("wednesday");
+    }
+    else if(r==5)
+    {
+        printf("thursday");
+    }
+    else if(r==6)
+    {
+        printf("friday");
+    }
+    else if(r==7)
+    {
+        printf("saturday");
+    }
+    else{
+        printf("not match");
+    }
+    return 0;
+}
+...........................................
+//Q.9 months
+#include <stdio.h>
+
+int main()
+{
+      int r;
+    printf("enter tha day:");
+    scanf("%d",&r);
+    if(r==1)
+    {
+        printf("january");
+    }
+    else if(r==2)
+    {
+        printf("february");
+    }
+    else if(r==3)
+    {
+       printf("march"); 
+    }
+    else if(r==4)
+    {
+        printf("april");
+    }
+    else if(r==5)
+    {
+        printf("may");
+    }
+    else if(r==6)
+    {
+        printf("june");
+    }
+    else if(r==7)
+    {
+        printf("july");
+    }
+    else if(r==8)
+    {
+        printf("august");
+    }
+    else if(r==9)
+    {
+        printf("september");
+    }
+    else if(r==10)
+    {
+        printf("october");
+        
+    }
+    else if(r==11)
+    {
+        printf("november");
+    
+    }
+    else if(r==12)
+    {
+        printf("december");
+    }
+    
+    else{
+        printf("not match");
+    }
+    return 0;
+}
+
+...........................................
+//Q.10 a =apple b =boy c =cat d =doll e =elephant f=frog    not match
+
+not match 
+
+int main()
+{
+    char r;
+    printf("enter tha word:");
+    scanf("%c",&r);
+    if(r=='a')
+    {
+        printf("apple");
+    }
+    else if(r=='b')
+    {
+        printf("boy");
+    }
+    else if(r=='c')
+    {
+       printf("cat"); 
+    }
+    else if(r=='d')
+    {
+        printf("dog");
+    }
+    else if(r=='e')
+    {
+        printf("elephant");
+    }
+    else if(r=='f')
+    {
+        printf("frog");
+    }
+    
+    else{
+        printf("not match");
+    }
+    return 0;
+}
+ .........................................................   
+
