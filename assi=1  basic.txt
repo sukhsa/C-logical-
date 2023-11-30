@@ -1,0 +1,250 @@
+//Q.1 23, .456, 123456 ko stored
+#include <stdio.h>
+
+int main()
+{
+    int a=23;
+    float b=.456;
+    int c=123456;
+    printf("%d\n",a);
+    printf("%f\n",b);
+    printf("%d",c);
+
+    return 0;
+}
+.........................................
+//Q.2 t, u, v, w ko stored
+#include<stdio.h>
+int main()
+{
+    char a='t';
+    char b='u';
+    char c='w';
+    char d='h';
+    printf("%c\n",a);
+    printf("%c\n",b);
+    printf("%c\n",c);
+    printf("%c",d);
+    
+    return 0;
+}
+..........................................
+
+//Q.3 adddition of 12 and 78
+#include<stdio.h>
+int main()
+{
+    
+ int a= 12;
+ int b=78;
+ int c=a+b;
+    printf("%d",c); 
+    return 0;
+}
+.........................................
+//Q.4 567 - 34 
+#include <stdio.h>
+
+int main()
+{
+    int a=567;
+    int b=34;
+    int c=a-b;
+    printf("%d",c);
+
+    return 0;
+}
+........................................
+//Q.5 22/2
+#include <stdio.h>
+
+int main()
+{
+    int a=22;
+    int b=2;
+    int c=a/b;
+    printf("%d",c);
+
+    return 0;
+}
+
+.......................................
+
+//Q.6 23*124
+#include <stdio.h>
+
+int main()
+{
+    int a=23;
+    int b=124;
+    int c=a*b;
+    printf("%d",c);
+
+    return 0;
+}
+.........................................
+
+//Q.7 23+56+8+12
+#include <stdio.h>
+
+int main()
+{
+    int a=23;
+    int b=56;
+    int c=8;
+    int d=12;
+    int e=a+b+c+d;
+    printf("%d",e);
+
+    return 0;
+}
+
+..........................................
+
+
+//Q.8 67-12*3+7
+#include <stdio.h>
+
+int main()
+{
+    int a=67;
+    int b=12;
+    int c=3;
+    int d=7;
+    int e=a-b*c+d;
+    printf("%d",e);
+
+    return 0;
+}
+........................................
+
+//Q.9 12+(56*32)-78/2
+
+#include <stdio.h>
+
+int main()
+{
+    int a=12;
+    int b=56;
+    int c=32;
+    int d=78;
+    int e=2;
+    int f=a+(b*c)-d/e;    
+    printf("%d",f);
+
+    return 0;
+}
+
+............................................
+
+
+
+
+*******************************************************************************/
+//Q.10 1.2+5.6*2-8
+#include <stdio.h>
+
+int main()
+{
+    float a=1.2;
+    float b=5.6;
+    int c=2-8;
+    float result;
+    result=a+b*c;
+    printf("%f",result);
+    
+
+    return 0;
+}
+
+......................................
+//Q.11 AREA OF SQUARE SIDE IS 4 
+#include <stdio.h>
+
+int main()
+{
+     int a=4;
+    int b=4;
+    int result;
+    result= a*b;
+    printf("the area of square %d",result);
+    return 0;
+}
+
+........................................
+
+//Q.12 AREA OF RACTANGLE LENGTH 6 WIDTH 6
+#include <stdio.h>
+
+int main() int a=4;
+    int b=4;
+    int result;
+    result= a*b;
+    printf("the area of square %d",result);
+
+
+  
+
+    return 0;
+}
+
+{
+    int length =6;
+    int width =6;
+    int area;
+    area =length*width;
+    
+    printf("area of ractangle is %d", area);
+
+    return 0;
+}
+...........................................
+
+//Q.13 area of traingle
+#
+#include <stdio.h>
+int main()
+{ 
+    int a = 2;
+    int b= 1;
+    float area;
+    area=0.5*a*b;
+    printf("the araa of ractangle is %f", area);
+  
+
+    return 0;
+}
+
+...........................................
+
+//Q.14 VOLUME OF sphere
+#include <stdio.h>
+
+int main()
+{
+    float pi=3.14;
+    int r=4;
+    float area;
+    area=1.33*pi*r*r*r;
+    printf("volume of sphere %f", area);
+
+
+    return 0;
+}
+.............................................
+
+//Q.15 VOLUME OF cube
+#include <stdio.h>
+
+int main()
+{
+    int a=3;
+    int area;
+    area=a*a*a;
+    printf("volume of cube %d", area);
+
+
+    return 0;
+}
+
+
