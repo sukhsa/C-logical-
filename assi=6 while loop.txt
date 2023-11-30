@@ -1,0 +1,269 @@
+/Q.1 1--->10 number print 
+#include <stdio.h>
+
+int main()
+{
+    int a=1;
+    while(a<=10)
+    {
+    printf("%d",a);
+    a++;
+    }
+    return 0;
+}
+........................................
+//Q.2 1--->100 number print 
+#include <stdio.h>
+
+int main()
+{
+    int a=1;
+    while(a<=100)
+    {
+    printf("%d",a);
+    a++;
+    }
+    return 0;
+}
+.........................................
+//Q.3 50---->100 number print 
+
+#include <stdio.h>
+
+int main()
+{
+    int a=50;
+    while(a<=100)
+    {
+    printf("%d",a);
+    a++;
+    }
+    return 0;
+}
+...........................................
+//Q.4 500---->1000 number print 
+
+#include <stdio.h>
+
+int main()
+{
+     int a=500;
+    while(a<=1000)
+    {
+    printf("%d",a);
+    a++;
+    }
+    return 0;
+}
+..........................................
+//Q.5 34---->89 number print 
+
+#include <stdio.h>
+
+int main()
+{
+    int a=34;
+    while(a<=89)
+    {
+    printf("%d",a);
+    a++;
+    }
+    return 0;
+}
+.................................................
+//Q.6 user input start point : 56 end point : 90
+
+#include <stdio.h>
+
+int main()
+{
+     int a;
+     int b;
+     printf("plese enter the starting point value : \n");
+     scanf("%d",&a);
+     printf("please enter the end point value : \n");
+     scanf("%d",&b);
+    while(a<=b)
+    {
+    printf("%d",a);
+    a++;
+    }
+    return 0;
+................................................
+//Q.7 100-----1 value print
+
+
+#include <stdio.h>
+
+int main()
+{
+    int start=100;
+    while(start>=1)
+    {
+    printf("%d",start);
+    start--;
+    }
+    return 0;
+}
+...............................................
+//Q.8 500---->50 value print 
+
+#include <stdio.h>
+
+int main()
+{
+    int start=500;
+    while(start>=50)
+    {
+    printf("%d",start);
+    start--;
+    }
+    
+    return 0;
+}
+..................................................
+//Q.9 user input start point : 90 end point : 67
+
+#include <stdio.h>
+
+int main()
+{
+     int a;
+     int b;
+     printf("plese enter the starting point value : \n");
+     scanf("%d",&a);
+     printf("please enter the end point value : \n");
+     scanf("%d",&b);
+    while(a>=b)
+    {
+    printf("%d",a);
+    a--;
+    }
+    return 0;
+}
+.....................................................
+//Q.10 reverse :54253 
+
+#include <stdio.h>
+
+int main()
+{
+   int num;
+    printf("enter the value of num ");
+    scanf("%d",&num);
+    int rem,sum=0;
+    while(num>0)
+    {
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    printf("the reverse value is :%d",sum);
+    return 0;
+}
+......................................................
+//Q.11 pallindrome 32545 
+
+#include <stdio.h>
+
+int main()
+{
+    int num=32545;
+    int temp=num;
+    int rem,sum=0;
+    while(num>0)
+    {
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    if(sum==temp)
+    {
+        printf("number is pallindrome");
+    }
+    else {
+        printf("number is not pallindrome");
+    }
+    return 0;
+}
+................................................
+//Q.12 pallindrome 1234321
+
+#include <stdio.h>
+
+int main()
+{
+    int num=1234321;
+    int temp=num;
+    int rem,sum=0;
+    while(num>0)
+    {
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    if(sum==temp)
+    {
+        printf("number is pallindrome");
+    }
+    else {
+        printf("number is not pallindrome");
+    }
+    return 0;
+}
+...................................
+//Q.13 armstrong:153
+	
+
+#include <stdio.h>
+
+int main()
+{
+     int num=153;
+    int rem,sum=0;
+    int temp=num;
+    while(num>0)
+    {
+        rem=num%10;
+        sum=sum+rem*rem*rem;
+        num=num/10;
+        
+    }
+    if(temp==sum)
+    {
+        printf("armstrong number");
+    }
+    else {
+        printf("no armstrong number");
+    }
+    return 0;
+}
+.................................................
+//Q.14 armstrong:178
+	
+
+#include <stdio.h>
+
+int main()
+{
+     int num=178;
+    int rem,sum=0;
+    int temp=num;
+    while(num>0)
+    {
+        rem=num%10;
+        sum=sum+rem*rem*rem;
+        num=num/10;
+        
+    }
+    if(temp==sum)
+    {
+        printf("armstrong number");
+    }
+    else {
+        printf("no armstrong number");
+    }
+    return 0;
+}
+
+...........................................
