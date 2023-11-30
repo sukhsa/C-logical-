@@ -1,0 +1,81 @@
+ //Q.1  user age 18 se  jyada hey =>valid for vote 18 se km not valid for vote 
+
+#include <stdio.h>
+
+int main()
+{
+    int age;
+    printf("enter age");
+    scanf("%d", &age);
+    
+    if(age>18)
+    {
+        printf ("valid for vote");
+    }
+    
+    else {
+        printf("not valid for vote");
+    }
+    return 0;
+}
+
+................................
+//Q.2 num is greater then 50 processing and 50 s km not processing
+#include <stdio.h>
+
+int main()
+{
+
+    int num;
+    printf("enter the num");
+    scanf("%d", &num);
+    if (num>50)
+    {
+    printf("processing....");
+    }
+    else{
+       printf("not processing"); 
+    }
+    return 0;
+}
+.............................................
+// Q.3 num check divisible by 5
+#include <stdio.h>
+
+int main()
+{
+
+    int num;
+    printf("enter the num");
+    scanf("%d", &num);
+    if (num%5==0)
+    {
+    printf("no is devisable");
+    }
+    else{
+       printf("number is not devisable"); 
+    }
+    return 0;
+}
+
+
+
+ ...............................
+// Q.4 num check divisible by 11
+#include <stdio.h>
+
+int main()
+{
+
+    int num;
+    printf("enter the num");
+    scanf("%d", &num);
+    if (num%11==0)
+    {
+    printf("no is devisable");
+    }
+    else{
+       printf("number is not devisable"); 
+    }
+    return 0;
+}
